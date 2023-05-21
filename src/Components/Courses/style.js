@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 1000px;
+  height: 1100px;
   margin-top: 40px;
 `;
 Wrapper.Header = styled.div`
