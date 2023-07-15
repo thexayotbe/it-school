@@ -4,6 +4,8 @@ import Features from "../Features";
 import Courses from "../Courses";
 import StudyTypes from "../StudyTypes";
 import Roadmap from "../Roadmap";
+import FAQ from "../FAQ";
+import Connect from "../Conect";
 
 const HomeComponent = () => {
   return (
@@ -13,6 +15,8 @@ const HomeComponent = () => {
       <Courses />
       <StudyTypes />
       <Roadmap />
+      <FAQ />
+      <Connect />
     </>
   );
 };

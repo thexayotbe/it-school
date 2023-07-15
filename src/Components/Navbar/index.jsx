@@ -1,9 +1,11 @@
 import React from "react";
 import { Wrapper } from "./style";
 import { Span } from "../Generic/styles";
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <Wrapper>
@@ -11,10 +13,10 @@ const Navbar = () => {
           <Span>{"< "}</Span> UITS <Span>{" />"}</Span>
         </Wrapper.Logo>
         <Wrapper.Links>
-          <Wrapper.Link className="active">
+          <Wrapper.Link className="active" onClick={() => navigate("/")}>
             .home<Span>()</Span>
           </Wrapper.Link>
-          <Wrapper.Link>
+          <Wrapper.Link onClick={() => navigate("/team")}>
             .team<Span>()</Span>
           </Wrapper.Link>
           <Wrapper.Link>

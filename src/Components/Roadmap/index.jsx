@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Wrapper } from "./style";
 import Card from "./Card";
-import { Span } from "../Generic/styles";
+import { Span, Title } from "../Generic/styles";
 import choise from "../../assets/images/choise.jpg";
 import study from "../../assets/images/study.jpg";
 import project from "../../assets/images/project.jpg";
@@ -44,9 +44,9 @@ const Roadmap = () => {
 
   return (
     <Wrapper>
-      <Wrapper.Title>
+      <Title>
         <Span>Ta`lim</Span> Tizimi
-      </Wrapper.Title>
+      </Title>
       <Wrapper.Items>
         <Wrapper.Sides>
           {data.map(

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Card from "./Card";
 import { Wrapper } from "./style";
-import { Span } from "../Generic/styles/index";
+import { Span, Title } from "../Generic/styles/index";
 import ks from "../../assets/images/ks.jpg";
 import psh from "../../assets/images/psh.jpg";
 import ka from "../../assets/images/ka.jpg";
@@ -62,9 +62,9 @@ const Courses = () => {
   return (
     <Wrapper>
       <Wrapper.Header>
-        <Wrapper.Title>
+        <Title>
           Bizning <Span>kurslar</Span>
-        </Wrapper.Title>
+        </Title>
       </Wrapper.Header>
       <Wrapper.Items>
         {data.map((value) => (

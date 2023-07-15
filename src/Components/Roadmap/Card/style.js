@@ -62,12 +62,3 @@ Wrapper.Text = styled.p`
   color: #333333;
 `;
 export { Wrapper };
-
-let sum = 0;
-
-for (let i = 0; i < 50; i++) {
-  if (i % 2 === 0) {
-    sum += i;
-  }
-}
-console.log(sum);
